@@ -1,4 +1,4 @@
-# README: Brevo API Data Processing with CSV
+# Brevo API Data Processing with CSV
 This project automates sending data from a CSV file to the Brevo API for double opt-in confirmation.
 
 ## Features:
