@@ -1,0 +1,6 @@
+Sent data for email: rona+9@4sgm.com
+Payload: {'email': 'rona+9@4sgm.com', 'includeListIds': [13], 'redirectionUrl': 'https://www.4sgm.com/category/422/Thank-You.html', 'templateId': 41, 'attributes': {'FNAME': '', 'LNAME': ''}, 'excludeListIds': [6]}
+
+Sent data for email: rona+10@4sgm.com
+Payload: {'email': 'rona+10@4sgm.com', 'includeListIds': [13], 'redirectionUrl': 'https://www.4sgm.com/category/422/Thank-You.html', 'templateId': 41, 'attributes': {'FNAME': '', 'LNAME': ''}, 'excludeListIds': [6]}
+
