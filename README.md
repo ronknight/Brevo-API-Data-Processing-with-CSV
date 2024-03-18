@@ -33,7 +33,10 @@ BREVO_API_URL=https://api.brevo.com
 ## Usage:
 
 Replace your_data.csv in the script with the path to your CSV file.
-Run the script: python your_script.py (replace your_script.py with your actual script name).
+Run the script: 
+```bash
+python main.py
+```
 
 ## Explanation:
 
