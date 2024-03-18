@@ -3,6 +3,8 @@ import csv
 import json
 import requests
 from dotenv import load_dotenv
+from datetime import date, datetime  # Import both date and datetime
+
 
 def process_csv_data(csv_file):
   """
@@ -16,7 +18,10 @@ def process_csv_data(csv_file):
   base_url = os.getenv("BREVO_API_URL")
   api_key = os.getenv("BREVO_API_KEY")
 
+  today = date.today().strftime("%Y-%m-%d")  # Format date as YYYY-MM-DD
+
   success_log = open("api_success_log.txt", "a")
+  error_log = open("api_log_error.txt", "a")  # Open error log file for appending
 
   with open(csv_file, "r") as csvfile:
     reader = csv.DictReader(csvfile)
@@ -26,6 +31,8 @@ def process_csv_data(csv_file):
       fname = row.get("FNAME", "")
       lname = row.get("LNAME", "")
       # ... Extract other data from row as needed ...
+      timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
 
       # Build payload dictionary
       payload = {
@@ -53,15 +60,17 @@ def process_csv_data(csv_file):
         response.raise_for_status()
 
         # Successful connection - log data
-        success_log.write(f"Sent data for email: {email}\n")
-        success_log.write(f"Payload: {payload}\n\n")
+        success_log.write(f"{timestamp} - Sent data for email: {email}\t")
+        success_log.write(f"Payload: {payload}\n")
         print(f"Successfully sent data for email: {email}")
 
       except requests.exceptions.RequestException as e:
-        print(f"Error sending data for email: {email} - {e}")
+          error_message = f"Error sending data for email: {email} - {e}"
+          print(error_message)  # Print to console for visibility
+          error_log.write(f"{timestamp} - {error_message}\n")
 
-  success_log.close()
-
+    success_log.close()
+    error_log.close()  # Close the error log file
 
 if __name__ == "__main__":
   csv_file = "data.csv"  # Replace with your CSV file path
