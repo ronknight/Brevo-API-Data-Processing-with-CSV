@@ -38,8 +38,8 @@ def process_csv_data(csv_file):
       payload = {
           "email": email,
           "includeListIds": [13],
-          "redirectionUrl": "https://www.4sgm.com/category/422/Thank-You.html?utm_source=brevo&utm_campaign=2024-03-batch1-C&utm_medium=email",
-          "templateId": 43,
+          "redirectionUrl": "https://www.4sgm.com/category/422/Thank-You.html?utm_source=brevo&utm_campaign=2024-03-batch1-E&utm_medium=email",
+          "templateId": 46,
           "attributes": {
               "FNAME": fname,
               "LNAME": lname,
