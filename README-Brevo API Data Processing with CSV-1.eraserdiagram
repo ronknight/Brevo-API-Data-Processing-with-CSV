@@ -1,0 +1,21 @@
+flowchart-diagram
+
+
+title Brevo API Data Processing with CSV
+
+// Define nodes and relationships
+Start [shape: oval, icon: flag] > Read CSV file [icon: file-text]
+Read CSV file > Extract data [icon: list]
+Extract data > Construct payload [icon: package]
+Construct payload > Send POST request to Brevo API [icon: send]
+Send POST request to Brevo API > Log success [icon: file-text]
+Log success > End [shape: oval, icon: check]
+
+// Define Groups
+For each row in CSV [icon: repeat] {
+  Extract data
+  Construct payload
+  Send POST request to Brevo API
+  Log success
+}
+
