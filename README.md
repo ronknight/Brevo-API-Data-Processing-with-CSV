@@ -49,6 +49,7 @@ This project provides a basic framework for sending data from a CSV file to the 
 ## Diagrams
 <!-- eraser-additional-files -->
 <a href="/README-Brevo API Data Processing with CSV-1.eraserdiagram" data-element-id="fexIafQDXbKbDqreABvuB"><img src="/.eraser/427E9mL2QrH2rpHE9SVm___3Jivg2tjMecMlrHwbIVIBR8f7U03___---diagram----45e0b0ce114090220152bb265f71f347-Brevo-API-Data-Processing-with-CSV.png" alt="" data-element-id="fexIafQDXbKbDqreABvuB" /></a>
+<a href="/README-Brevo API Data Processing with CSV-2.eraserdiagram" data-element-id="2ruRMjC1k-AFuyIGnXxv8"><img src="/.eraser/427E9mL2QrH2rpHE9SVm___3Jivg2tjMecMlrHwbIVIBR8f7U03___---diagram----7c7cfac86f5478b012df28f5e7d5576b-Brevo-API-Data-Processing-with-CSV.png" alt="" data-element-id="2ruRMjC1k-AFuyIGnXxv8" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
 <!--- Eraser file: https://app.eraser.io/workspace/427E9mL2QrH2rpHE9SVm --->

@@ -1,0 +1,22 @@
+cloud-architecture-diagram
+
+
+title Brevo API Data Processing with CSV
+
+// Define groups and nodes
+Data Processing {
+  CSV Reader [icon: file-text]
+  Data Extractor [icon: filter]
+  Payload Builder [icon: settings]
+  API Connector [icon: cloud-upload]
+}
+Logging {
+  Success Logger [icon: file-text]
+}
+
+// Define connections where none are between a parent group and its own child node
+CSV Reader > Data Extractor
+Data Extractor > Payload Builder
+Payload Builder > API Connector
+API Connector > Success Logger
+
